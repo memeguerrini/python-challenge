@@ -10,7 +10,7 @@ import csv
 
 import os
 # Store the file path associated with the file (note the backslash may be OS specific)
-file = 'Resources/budget_data.csv'
+file =  os.path.join("Resources","budget_data.csv")
 
 
 # Open the file in "read" mode ('r') and store the contents in the variable "text"
@@ -59,7 +59,7 @@ profit_loss_change = 0
 
 #change directory of current script and folder to collect data
 
-os.chdir(os.path.dirname(__file__))
+#os.chdir(os.path.dirname(__file__))
 
 budget_data_csv_path = os.path.join(file)
 
